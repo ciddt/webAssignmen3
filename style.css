@@ -1,0 +1,115 @@
+/*
+    TABLE OF CONTENT
+    1. Reset and Global
+    2. Mobile and table responsive
+    3. Desktop responsive
+*/
+
+/*======= Reset and Global ======*/
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;700&family=Open+Sans:wght@400;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans' ,Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/*======= Mobile and Tablet Responsive ======*/
+nav {
+  background-color: #556270;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: coral;
+}
+
+/*======= Desktop Responsive ======*/
+@media only screen and (min-width: 992px) {
+  /* For header desktop*/
+  nav {
+    background-color: #fff !important;
+  }
+
+  .nav-link {
+    color: #333;
+  }
+  
+  .nav-link:hover {
+    color: coral;
+  }
+
+  /* For Hero (banner) */
+  .hero {
+    background-image: url(image/lodging.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    margin-top: 0 !important;
+  }
+
+  .hero container {
+    position: relative;
+  }
+
+  .hero h2 {
+    position: absolute;
+    top: 45%;
+    font-size: 2.5rem;
+    color: #eee;
+  }
+
+  .hero p {
+    position: absolute;
+    top: 55%;
+  }
+
+  .hero hr {
+    display: none;
+  }
+
+  /* For main */
+  main {
+    background-color: #e4e4e4;
+  }
+
+  /* For footer */
+  footer {
+    background-color: #f0f0f0;
+  }
+}
